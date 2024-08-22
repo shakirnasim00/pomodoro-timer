@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./resources/fireplace-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 100vh;
+    max-height: 100vh;
+    text-align: center;
+}
+
+
+.title{
+    font-size: 2rem;
+    color: white;
+}
+
+ .timer {
+    font-size: 8rem;
+    color: white;
+}
+
+button {
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 500px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-transform: lowercase;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.bg-icon-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+
+.bg-icon-container img:hover {
+    cursor: pointer;
+}
+
+
+#dropdown-menu {
+    display: none;
+    height: 300px;
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
