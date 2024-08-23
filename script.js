@@ -16,6 +16,8 @@ let timerRunning = false;
 let timeLeft = 1500; // 1500s = 25 minutes
 let twentyFiveMinActive = true;
 
+notificationAudio.load() //pre-load the audio
+
 setButtonColor()
 
 
@@ -35,7 +37,6 @@ function setButtonColor() {
     }
 }
 
-
 function setTwentyFiveMin() {
     timeLeft = 1500;
     updateTimer()
@@ -54,7 +55,6 @@ function updateTimer() {
 
      let formattedTime = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
-
     timerClock.innerHTML = formattedTime;
 }
 
@@ -68,7 +68,6 @@ function startTimer() {
         updateTimer();
 
         if(timeLeft === 0) {
-
             clearInterval(interval);
             notificationAudio.play();
         }
